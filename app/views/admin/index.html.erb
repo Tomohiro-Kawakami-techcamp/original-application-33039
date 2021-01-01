@@ -1,0 +1,26 @@
+<header>
+<div>
+<h1>登録ユーザー一覧<h1>
+</div>
+<div>
+<h4><%= link_to "戻る", user_path(current_user.id), method: :get %></h4>
+</div>
+<header>
+<body>
+<table class = "detail-table">
+<tbody>
+        <tr>
+          <th class="detail-item4">名前</th>
+          <th class="detail-item5">メールアドレス</th>
+          <th class="detail-item6">会員の種類</th>
+        </tr>
+        <% @users.each do |user| %>
+        <tr>
+          <td class="detail-value4"><%= user.name %></td>
+          <td class="detail-value5"><%= user.email %></td>
+          <td class="detail-value6"><%= user.member.name %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
+</body>

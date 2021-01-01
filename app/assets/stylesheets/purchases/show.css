@@ -1,0 +1,53 @@
+.detail-table {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.detail-item7 {
+  width: 50%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 20px;
+  text-align: center;
+}
+
+.detail-value7 {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 20px;
+  text-align: center;
+}
+
+.detail-item8 {
+  width: 50%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 20px;
+  text-align: center;
+}
+
+.detail-value8 {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 20px;
+  text-align: center;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.thanks{
+  font-size: 25px;
+  color: red;
+}
+
+.backs{
+  font-size: 25px;
+}
+.mainbody{
+  margin-top: 30px;
+}

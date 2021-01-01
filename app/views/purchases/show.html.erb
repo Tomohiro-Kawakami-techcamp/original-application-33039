@@ -1,0 +1,20 @@
+<div class = "head">
+  <h4 class = "thanks">ご利用ありがとうございます。</h4>
+  <h4 class = "backs"><%= link_to "戻る", user_path(current_user.id), method: :get %><h4>
+</div>
+<div  class = "mainbody">
+<table class = "detail-table">
+<tbody>
+        <tr>
+          <th class="detail-item7">購入した商品</th>
+          <th class="detail-item8">購入日時</th>
+        </tr>
+        <% @orders.each do |order| %>
+        <tr>
+          <td class="detail-value7"><%= order.item.name %></td>
+          <td class="detail-value8"><%= order.created_at %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
+</div>

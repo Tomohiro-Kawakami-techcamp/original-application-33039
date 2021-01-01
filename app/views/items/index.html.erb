@@ -1,0 +1,60 @@
+<%= render "shared/header" %>
+<div class='main'>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      ようこそ<br>横浜Fマリノスオンラインショップへ
+    </h2>
+    <% if user_signed_in? %>
+    <% if current_user.id == 1 %>
+    <%= link_to(new_item_path, class: 'purchase-btn') do %>
+    <span class='purchase-btn-text'>出品</span>
+    <% end %>
+    <% end %>
+    <% end %>
+  </div>
+  <div class = "space">
+      <%= image_tag "IMG_0367.JPG", size: '150x200' %>
+      <%= image_tag "IMG_0359.JPG", size: '400x200' %>
+      <%= image_tag "IMG_0325.GIF", size: '150x200' %>
+   </div>
+   
+  <div class='item-contents'>
+    <div class = "item-arrange">
+      <h2 class = "arrange">商品一覧</h2>
+    </div>
+    <ul class='item-lists'>
+      <% @items.each do |item| %>
+      <li class='list'>
+        <%= link_to item_path(item.id) do %>
+        <div class='item-img-content'>
+          <%= image_tag item.image, class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= item.name %>
+          </h3>
+          <div class='item-price'>
+            <span>一般価格：<%= item.price %>円</span>
+            <span>会員価格：<%= item.price_discrimination %>円</span>
+            <div class='star-btn'>
+              <span class='star-count'><%= item.delivery.name %></span>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+      <% unless @items.present? %>
+      <li class='list'>
+        <%= link_to '#' do %>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            現在、商品は完売しております。またのご利用をお待ちしております。
+          </h3>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

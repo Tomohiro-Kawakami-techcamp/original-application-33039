@@ -1,0 +1,30 @@
+<head>
+<div class = "general">
+  <div class = "alldata">
+    全データ
+  </div>
+  <div class = "backs">
+    <%= link_to "戻る", user_path(current_user.id), method: :get %>
+  </div>
+</div>
+</head>
+<div class = "info">
+<body class = "data">
+<table class = "detail-table">
+<tbody>
+        <tr>
+          <th class="detail-item9">購入者</th>
+          <th class="detail-item10">購入した商品</th>
+          <th class="detail-item11">購入日時</th>
+        </tr>
+        <% @orders.each do |order| %>
+        <tr>
+          <td class="detail-value9"><%= order.user.name %></td>
+          <td class="detail-value10"><%= order.item.name %></td>
+          <td class="detail-value11"><%= order.created_at %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
+</body>
+</div>
