@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:show, :edit, :update]
   resources :admin, only: [:index, :show]
-  resources :purchases, only: [:index, :show]
+  resources :purchases, only: :show
 end

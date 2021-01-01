@@ -1,7 +1,5 @@
 class PurchasesController < ApplicationController
-  def index
-    @orders = Orders.all
-  end
+  before_action :authenticate_user!,  only: [:show]
 
   def show
     @orders = Order.where(user_id: current_user.id)
