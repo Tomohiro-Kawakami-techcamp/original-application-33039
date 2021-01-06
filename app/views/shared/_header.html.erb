@@ -1,7 +1,16 @@
 <header class='top-page-header'>
 <div class='nav'>
 <div class='lists-left'>
-  <%#= link_to 'カテゴリー', "#", class: "category-list" %></li>
+<% if user_signed_in? %>
+  <%#= link_to 'カテゴリー', "#", class: "category-list" %>
+  <% if current_user.id == 1 %>
+   <%= link_to 'コメントを見る', comments_path, method: :get, class: "category-list" %>
+   <%= link_to 'サービスをする', new_service_path, method: :get, class: "category-list" %>
+  <% else %>
+  <%= link_to 'コメントを書く', new_comment_path, method: :get, class: "category-list" %>
+  <%= link_to 'ファンサービスに応募する', "#", class: "category-list" %>
+  <% end %>
+<% end %>
 </div>
 <% if user_signed_in? %>
   <div class="greeting">

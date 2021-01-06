@@ -26,10 +26,16 @@
   <div class = "order">
     <%= link_to "注文一覧", admin_path(current_user.id), method: :get %>
   </div>
+  <div class = "service1">
+    <%= link_to "サービス応募者", "#" %>
+  </div>
 <% else%>
 <div class = "buy">
  <%= link_to "購入履歴", purchase_path(@user.id), method: :get %>
  </div>
+  <div class = "service1">
+    <%= link_to "サービス応募一覧", "#" %>
+  </div>
 <% end %>
 <div class = "item">
 <%= link_to "商品ページへ",root_path  %>

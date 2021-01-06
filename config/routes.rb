@@ -3,9 +3,12 @@ Rails.application.routes.draw do
   
   root to: "items#index"
   resources :items do
+    get 'items/search'
     resources :orders, only: [:index, :create]
   end
   resources :users, only: [:show, :edit, :update]
   resources :admin, only: [:index, :show]
   resources :purchases, only: :show
+  resources :comments, only: [:index, :new, :show, :create]
+  resources :services, only: [:index, :new, :create, :show]
 end

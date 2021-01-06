@@ -1,0 +1,12 @@
+<%= form_with model: @comment, local: true do |f| %>
+<div class = "comment-top">
+  <h6 class = "comment1">コメント投稿</h6>
+  <%= f.text_area :message, class:"comments-text", id:"item-info", placeholder:"サービス向上のため是非とも建設的な意見をお願いします。(1,000文字まで)" ,rows:"7" ,maxlength:"1000" %>
+  <div>
+  </div>
+</div>
+<div class = "comment2">
+  <%= f.submit "投稿する" ,class:"comment-btn1" %>
+  <br><%=link_to 'ショップへもどる', root_path, class:"back-btn2" %>
+</div>
+<% end %>

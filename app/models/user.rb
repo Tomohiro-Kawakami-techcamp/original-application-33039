@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :items
          has_many :orders
+         has_many :comments
+         has_many :services
          enum admin: {normal: 0, staff:1}
 
          extend ActiveHash::Associations::ActiveRecordExtensions
