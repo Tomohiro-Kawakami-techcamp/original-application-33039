@@ -1,2 +1,42 @@
-<div>
+<div class = "service-head">
+  <h1 class = "service-title1">サービス投稿</h1>
+  <h3 class = "back-to-shop"><%=link_to 'もどる', root_path, class:"back-shop" %></h3>
 </div>
+<%= form_with model: @service, url: user_services_path, id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+<div class="new-services1">
+  <div class="services-explain">
+     <div class="service-bold-text">
+        ファンサービス内容
+      <span class="indispensable">必須</span>
+     </div>
+    <%= f.text_area :content, class:"services-content", id:"service-name", placeholder:"例)サイン会", maxlength:"20" %>
+  </div>
+</div>
+<div class = "new-services2">
+      <div class="items-explain">
+        <div class="weight-bold-text">
+        対象者
+        <span class="indispensable">必須</span>
+       </div>
+       <%= f.text_area :target, class:"services-target", id:"service-name", placeholder:"例)全員", maxlength:"20" %>
+      </div>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+        申込期限
+        <span class="indispensable">必須</span>
+       </div>
+      <%= f.text_area :limit_day, class:"services-limit", id:"service-name", placeholder:"例)12/25", maxlength:"5" %>
+     </div>
+     <div class="items-explain">
+        <div class="weight-bold-text">
+        抽選発表日
+        <span class="indispensable">必須</span>
+       </div>
+      <%= f.text_area :release_day, class:"services-release", id:"service-name", placeholder:"例)12/25", maxlength:"5" %>
+     </div>
+</div>
+<p></p>
+<div class = "comment2">
+  <%= f.submit "投稿する" ,class:"comment-btn1" %>
+</div>
+<% end %>

@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   resources :admin, only: [:index, :show]
   resources :purchases, only: :show
   resources :comments, only: [:index, :new, :show, :create]
-  resources :services, only: [:index, :new, :create, :show]
+  resources :services do
+  resources :service_orders, only: [:index, :new, :create]
+  end
 end

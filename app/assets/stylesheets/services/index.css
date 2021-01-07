@@ -1,0 +1,107 @@
+.service-all{
+  font-size: 40px;
+  text-align: center;
+}
+
+.detail-table-general-service {
+  margin-bottom: 30px;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.services-table{
+  text-align: center;
+}
+
+.detail-service1 {
+  width: 30%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service2 {
+  width: 10%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service-value1 {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service-value2 {
+  width: 10%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service3 {
+  width: 20%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service4 {
+  width: 10%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service-value3 {
+  width: 20%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service-value4 {
+  width: 10%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service5 {
+  width: 10%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-service-value5 {
+  width: 10%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.appoint{  
+  background: red;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 20px 5%;
+  width: 20%;
+  height: 55px;
+  font-size: 14px;
+  margin-bottom: 4vh;
+  text-decoration: none;
+}

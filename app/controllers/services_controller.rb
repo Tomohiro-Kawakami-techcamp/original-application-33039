@@ -1,10 +1,11 @@
 class ServicesController < ApplicationController
+
   def index
-    @services = Service.all.order("created_at DESC")
+    @services = Service.all
   end
 
   def new
-   @service = Service.new
+     @service = Service.new
   end
 
   def create
@@ -17,6 +18,6 @@ class ServicesController < ApplicationController
   end
 
   def service_params
-    params.require(:service).permit(:content, :limit_day, :target).merge(user_id: current_user.id)
+    params.require(:service).permit(:content, :limit_day, :target, :release_day).merge(user_id: current_user.id)
   end
 end

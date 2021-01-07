@@ -1,0 +1,22 @@
+<div>
+  <h4 class = "appoint-content">申込内容</h4>
+  <h4 class = "back-to-index"><%= link_to "戻る", services_path %><h4>
+</div>
+
+  <%= form_with model: @service_order, url: service_service_orders_path, id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+<div class = "appoint-table">
+  <table class = "detail-service-content">
+     <tbody>
+        <tr>
+          <th class="detail-service1">内容</th>
+        </tr>
+        <tr>
+          <td class="detail-service-value1"><%= @service.content %></td>
+        </tr>
+      </tbody>
+   </table>
+</div>
+<div class = "appo">
+  <%= f.submit "申し込む" ,class:"comment-btn1" %>
+</div>
+<% end %>

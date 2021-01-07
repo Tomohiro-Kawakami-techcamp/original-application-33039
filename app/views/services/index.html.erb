@@ -1,0 +1,28 @@
+<div class = "service-top">
+  <h4 class = "service-all">サービス一覧</h4>
+  <h4 class = "back-to-index"><%= link_to "戻る", items_path %><h4>
+</div>
+<div class = "services-table">
+<table class = "detail-table-general-service">
+     <tbody>
+        <tr>
+          <th class="detail-service1">内容</th>
+          <th class="detail-service2">締め切り</th>
+          <th class="detail-service3">対象者</th>
+          <th class="detail-service4">抽選発表日</th>
+          <th class="detail-service5"></th>
+        </tr>
+        <% @services.each do |service| %>
+        <tr>
+          <td class="detail-service-value1"><%= service.content %></td>
+          <td class="detail-service-value2"><%= service.limit_day %></td>
+          <td class="detail-service-value3"><%= service.target %></td>
+          <td class="detail-service-value4"><%= service.release_day %></td>
+          <td class="detail-service-value5">
+          <%=link_to '応募画面に進む', service_service_orders_path(service.id), class:"appoint" %>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
+</div>
