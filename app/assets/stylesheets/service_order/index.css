@@ -1,6 +1,8 @@
 .appoint-content{
   text-align: center;
   font-size: 40px;
+  background-color: red;
+  color: white;
 }
 
 .detail-service-content{

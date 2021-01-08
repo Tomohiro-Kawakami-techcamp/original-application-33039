@@ -1,3 +1,16 @@
+.admin-title{
+  text-align: center;
+  font-size: 40px;
+  background-color: red;
+  color: white;
+}
+
+.backs2{
+  font-size: 25px;
+  text-align: right;
+  margin-right: 40px;
+}
+
 .detail-table {
   margin-bottom: 30px;
   width: 100%;
@@ -7,8 +20,9 @@
   width: 30%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  color: blue;
 }
 
 .detail-value4 {
@@ -17,8 +31,6 @@
   border: 1px solid #dedede;
   font-size: 18px;
   text-align: center;
-  background-color: blue;
-  color: white;
 }
 
 .detail-item5 {
@@ -27,6 +39,7 @@
   border: 1px solid #dedede;
   font-size: 18px;
   text-align: center;
+  color: blue;
 }
 
 .detail-value5 {
@@ -43,6 +56,7 @@
   border: 1px solid #dedede;
   font-size: 18px;
   text-align: center;
+  color:blue;
 }
 
 .detail-value6 {
@@ -51,5 +65,4 @@
   border: 1px solid #dedede;
   font-size: 18px;
   text-align: center;
-  background-color: red;
 }

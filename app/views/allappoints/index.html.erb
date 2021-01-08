@@ -1,0 +1,20 @@
+<div class = "service-top">
+  <h4 class = "service-all2">応募したサービス一覧</h4>
+  <h4 class = "back-to-index"><%= link_to "戻る", user_path(current_user.id) %><h4>
+</div>
+<div class = "appoint-table2">
+  <table class = "detail-service-content2">
+     <tbody>
+        <tr>
+          <th class="detail-appoint1">申込んだサービス</th>
+          <th class="detail-appoint2">抽選発表日</th>
+        </tr>
+        <% @service_orders.each do |service_order| %>
+        <tr>
+          <td class="detail-appoint-value1"><%= service_order.service.content %></td>
+          <td class="detail-appoint-value2"><%= service_order.service.release_day %></td>
+        </tr>
+        <% end %>
+      </tbody>
+   </table>
+</div>

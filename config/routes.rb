@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   resources :services do
   resources :service_orders, only: [:index, :new, :create]
   end
+  resources :allappoints, only: [:index]
+  resources :service_lists, only: [:index]
 end

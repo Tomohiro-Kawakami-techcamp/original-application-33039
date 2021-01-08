@@ -7,8 +7,9 @@
   width: 20%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  color: blue;
 }
 
 .detail-value9 {
@@ -17,16 +18,15 @@
   border: 1px solid #dedede;
   font-size: 18px;
   text-align: center;
-  background-color: blue;
-  color: white;
 }
 
 .detail-item10 {
   width: 40%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  color: blue;
 }
 
 .detail-value10 {
@@ -41,8 +41,9 @@
   width: 30%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  color: blue;
 }
 
 .detail-value11 {
@@ -51,16 +52,22 @@
   border: 1px solid #dedede;
   font-size: 18px;
   text-align: center;
-  background-color:red;
-  color: white;
 }
 
 .general{
-  display: flex;
   justify-content: space-between;
 }
 
 .alldata{
+  font-size: 40px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+.backs1{
+  text-align: right;
+  margin-right: 40px;
   font-size: 25px;
 }
 

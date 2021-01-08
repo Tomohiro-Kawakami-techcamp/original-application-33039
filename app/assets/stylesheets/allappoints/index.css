@@ -1,0 +1,49 @@
+.service-all2{
+  font-size: 40px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+.appoint-table2{
+  text-align: center;
+}
+
+.detail-service-content2{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail-appoint1 {
+  width: 40%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 18px;
+  text-align: center;
+  color: blue;
+}
+
+.detail-appoint-value1 {
+  width: 40%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 18px;
+  text-align: center;
+}
+
+.detail-appoint2 {
+  width: 10%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 18px;
+  text-align: center;
+  color: blue;
+}
+
+.detail-appoint-value2 {
+  width: 10%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 18px;
+  text-align: center;
+}

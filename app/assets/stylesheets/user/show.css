@@ -9,6 +9,8 @@ a {
 
 .title{
   background-position: top center;
+  font-size: 40px;
+  text-align: center;
 }
 
 .header-top{
@@ -17,8 +19,6 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  background-color: blue;
-  color :white;
 }
 
 .lists-right {
@@ -34,7 +34,6 @@ a {
 
 .logout1{
   text-decoration: none;
-  color: white;
 }
 
 .greeting{
@@ -44,6 +43,8 @@ a {
 
 .information{
  text-align: center; 
+ background-color: blue;
+ color: white;
 }
 
 .body{
@@ -70,11 +71,9 @@ a {
 
 .detail-value1 {
   width: 80%;
-  background-color: blue;
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 20px;
-  color: white;
 }
 
 .detail-item2 {
@@ -102,8 +101,13 @@ a {
 
 .detail-value3 {
   width: 80%;
-  background-color: red;
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 20px;
+}
+
+.second{
+  display: flex;
+  font-size: 18px;
+  justify-content: space-around;
 }
