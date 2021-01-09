@@ -3,6 +3,11 @@
   <h4 class = "back-to-index"><%= link_to "戻る", services_path %><h4>
 </div>
 
+<% if flash[:notice] %>
+  <div class="alert-danger">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
   <%= form_with model: @service_order, url: service_service_orders_path, id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
 <div class = "appoint-table">
   <table class = "detail-service-content">

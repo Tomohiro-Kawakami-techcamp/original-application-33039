@@ -18,3 +18,9 @@
 .appoint-table{
   text-align: center;
 }
+
+.alert-danger{
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
