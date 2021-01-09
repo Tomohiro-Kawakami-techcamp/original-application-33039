@@ -8,23 +8,25 @@
   width: 20%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  color: blue;
 }
 
 .detail-comment2 {
   width: 80%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  color: blue;
 }
 
 .detail-comment-value1 {
   width: 20%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -32,7 +34,7 @@
   width: 80%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -45,6 +47,8 @@
 
 .comment-all{
   font-size: 40px;
+  background-color: red;
+  color: white;
 }
 
 .back-to-index{
