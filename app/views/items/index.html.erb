@@ -23,6 +23,10 @@
       <h2 class = "arrange">商品一覧</h2>
     </div>
     <h6 class = "attention">※スタジアム受取希望の場合、購入手続き後、3日以内に連絡下さい<h6>
+    <br>
+    <div class = "page">
+       <%= paginate @items %>
+    </div>
     <ul class='item-lists'>
       <% @items.each do |item| %>
       <li class='list'>
@@ -57,5 +61,8 @@
       </li>
       <% end %>
     </ul>
+    <div class = "page">
+       <%= paginate @items %>
+    </div>
   </div>
 </div>
