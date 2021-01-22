@@ -111,3 +111,7 @@ a {
   font-size: 18px;
   justify-content: space-around;
 }
+
+.username{
+  color: green;
+}

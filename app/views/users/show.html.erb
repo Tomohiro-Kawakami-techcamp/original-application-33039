@@ -4,7 +4,7 @@
 </div>
 <div class = "header-top">
 <ul>
-  <h3 class= "greeting">こんにちは<%= @user.name %>さん</h3>
+  <h3 class= "greeting">こんにちは<span class = "username"><%= @user.name %></span>さん</h3>
 </ul>
 <% if user_signed_in? %>
 <ul class = "lists-right">
