@@ -2,7 +2,9 @@
   <h4 class = "appoint-content">サービス応募者一覧</h4>
   <h4 class = "back-to-index"><%= link_to "戻る", user_path(current_user.id) %><h4>
 </div>
-
+<div class = "page">
+  <%= paginate @service_orders %>
+</div>
 <div class = "appoint-table">
   <table class = "detail-service-content">
      <tbody>

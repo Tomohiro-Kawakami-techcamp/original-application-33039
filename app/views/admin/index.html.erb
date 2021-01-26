@@ -5,6 +5,9 @@
 <div class = "backs2">
 <h4><%= link_to "戻る", user_path(current_user.id), method: :get %></h4>
 </div>
+<div class = "page">
+  <%= paginate @users %>
+</div>
 <header>
 <body>
 <table class = "detail-table">

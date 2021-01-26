@@ -4,10 +4,12 @@ class AdminController < ApplicationController
 
   def index
     @users = User.all.order("created_at DESC")
+    @users = User.page(params[:page]).per(10).order("created_at DESC")
   end
 
   def show
     @orders = Order.all.order("created_at DESC")
+    @orders = Order.page(params[:page]).per(10).order("created_at DESC")
   end
 
   private
