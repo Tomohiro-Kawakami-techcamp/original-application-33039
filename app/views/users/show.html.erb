@@ -19,14 +19,8 @@
   <div class = "user">
     <%= link_to "登録ユーザー一覧",admin_index_path, model: :get  %>
   </div>
-  <div class = "produce">
-    <%= link_to "出品ページ",new_item_path, model: :get  %>
-  </div>
   <div class = "order">
     <%= link_to "注文一覧", admin_path(current_user.id), method: :get %>
-  </div>
-  <div class = "service2">
-    <%= link_to 'サービスをする', new_service_path, method: :get %>
   </div>
   <div class = "service1">
     <%= link_to "サービス応募者", service_lists_path, method: :get %>
@@ -36,14 +30,14 @@
  <%= link_to "購入履歴", purchase_path(@user.id), method: :get %>
  </div>
  <div class = "service1">
-   <%= link_to 'ファンサービスに応募する', services_path, method: :get %>
+   <%= link_to 'ファンサービスに応募', services_path, method: :get %>
  </div>
   <div class = "service1">
     <%= link_to "応募したサービス一覧", allappoints_path, method: :get %>
   </div>
 <% end %>
 <div class = "item">
-<%= link_to "商品ページへ",root_path  %>
+<%= link_to "商品ページ",root_path  %>
 </div>
 <div class = "change">
 <%= link_to "登録情報変更",edit_user_path(@user.id), method: :get  %>
