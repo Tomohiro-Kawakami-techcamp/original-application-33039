@@ -2,6 +2,7 @@ class ServicesController < ApplicationController
 
   def index
     @services = Service.all.order("created_at DESC")
+    @services = Service.page(params[:page]).per(10).order("created_at DESC")
   end
 
   def new

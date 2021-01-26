@@ -2,6 +2,9 @@
   <h4 class = "service-all">サービス一覧</h4>
   <h4 class = "back-to-index"><%= link_to "戻る", user_path(current_user.id) %><h4>
 </div>
+<div class = "page">
+  <%= paginate @services %>
+</div>
 <div class = "services-table">
 <table class = "detail-table-general-service">
      <tbody>
