@@ -8,25 +8,15 @@
 | name_kana          | string   | null: false |
 | email              | string   | null: false |
 | encrypted_password | string   | null: false |
-| member_id         | integer  | null: false |
+| member_id          | integer  | null: false |
 | admin              | boolean  |             |
 
 ### Association
 - has_many :items
 - has_many :orders
-
-## orders テーブル
-
-| Column              | Type       | Options                        |
-| ------------------- | ---------- | ------------------------------ |
-| user                | references | null: false, foreign_key: true | 
-| item                | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- belongs_to :item
-- has_one    :address
+- has_many :services
+- has_many :comments
+- has_many :service_orders
 
 ## items テーブル
 
@@ -44,6 +34,57 @@
 
 - belongs_to :user
 - has_one    :order
+
+## services テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | ------------------------------ |
+| content                | string     | null: false                    |
+| limit_day              | string     | null: false                    |
+| target                 | string     | null: false                    |
+| release_day            | string     | null: false                    |
+| user                   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- has_many   :service_orders
+
+## services_orders テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | ------------------------------ |
+| user                   | references | null: false, foreign_key: true |
+| service                | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :service
+
+## comments テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | ------------------------------ |
+| message                | text       | null: false                    |
+| user                   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+
+## orders テーブル
+
+| Column              | Type       | Options                        |
+| ------------------- | ---------- | ------------------------------ |
+| user                | references | null: false, foreign_key: true | 
+| item                | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :item
+- has_one    :address
 
 ## address テーブル
 

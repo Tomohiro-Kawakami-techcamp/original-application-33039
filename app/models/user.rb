@@ -7,6 +7,7 @@ class User < ApplicationRecord
          has_many :orders
          has_many :comments
          has_many :services
+         has_many :service_orders
          enum admin: {normal: 0, staff:1}
 
          extend ActiveHash::Associations::ActiveRecordExtensions
