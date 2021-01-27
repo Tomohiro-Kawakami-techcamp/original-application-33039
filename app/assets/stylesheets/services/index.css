@@ -14,7 +14,7 @@
 
 .services-table{
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,7 +29,7 @@
 }
 
 .detail-service2 {
-  width: 5%;
+  width: 10%;
   background-color: #eee;
   border: 1px solid #dedede;
   font-size: 18px;
@@ -46,7 +46,7 @@
 }
 
 .detail-service-value2 {
-  width: 5%;
+  width: 10%;
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 18px;
@@ -63,7 +63,7 @@
 }
 
 .detail-service4 {
-  width: 5%;
+  width: 10%;
   background-color: #eee;
   border: 1px solid #dedede;
   font-size: 18px;
@@ -80,7 +80,7 @@
 }
 
 .detail-service-value4 {
-  width: 5%;
+  width: 10%;
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 18px;
@@ -88,7 +88,7 @@
 }
 
 .detail-service5 {
-  width: 10%;
+  width: 15%;
   background-color: #eee;
   border: 1px solid #dedede;
   font-size: 18px;
@@ -97,7 +97,7 @@
 }
 
 .detail-service-value5 {
-  width: 10%;
+  width: 15%;
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 18px;
