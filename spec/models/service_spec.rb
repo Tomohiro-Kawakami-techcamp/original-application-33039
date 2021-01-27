@@ -22,6 +22,12 @@ RSpec.describe Service, type: :model do
       expect(@service.errors.full_messages).to include("Limit day can't be blank")
     end
 
+    it "申込期限の書き方が違うとサービスできないこと" do
+      @service.limit_day = "2021/02/05"
+      @service.valid?
+      expect(@service.errors.full_messages).to include("Limit day input correctly")
+    end
+
     it "対象者が空だとサービスできないこと" do
       @service.target = nil
       @service.valid?
@@ -32,6 +38,12 @@ RSpec.describe Service, type: :model do
       @service.release_day = nil
       @service.valid?
       expect(@service.errors.full_messages).to include("Release day can't be blank")
+    end
+
+    it "発表日が空ではサービスできないこと" do
+      @service.release_day = "2021/02/05"
+      @service.valid?
+      expect(@service.errors.full_messages).to include("Release day input correctly")
     end
   end
 end
