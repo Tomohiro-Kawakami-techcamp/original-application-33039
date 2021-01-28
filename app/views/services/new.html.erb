@@ -3,6 +3,9 @@
   <h3 class = "back-to-shop"><%=link_to '戻る', root_path, class:"back-shop" %></h3>
 </div>
 <%= form_with model: @service, url: services_path, id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+
+<%= render 'shared/error_messages', model: f.object %>
+
 <div class="new-services1">
   <div class="services-explain">
      <div class="service-bold-text">
