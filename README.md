@@ -47,18 +47,18 @@
 
 # 実装予定の機能
 
-・商品をカテゴリー別に検索する機能
-・売り切れたら表示する機能
-・抽選結果を通知する機能
+- 商品をカテゴリー別に検索する機能
+- 売り切れたら表示する機能
+- 抽選結果を通知する機能
 
 # ローカルでの動作方法
 
-$ cd original-application-33039
-$ bundle install
-$ rails db:create
-$ rails db:migrate
-$ rails s
-http://localhost:3000
+- $ cd original-application-33039
+- $ bundle install
+- $ rails db:create
+- $ rails db:migrate
+- $ rails s
+- http://localhost:3000
 
 # DB設計
 
