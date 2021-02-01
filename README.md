@@ -30,7 +30,7 @@
 
 ##### (2) 編集・削除
 ###### 削除ボタン押したら削除される
-https://gyazo.com/14f13db7beba530f40d9d36acedf7f80
+![demo](https://gyazo.com/14f13db7beba530f40d9d36acedf7f80/raw)
 
 ##### (3) サービス
 ######  👇必要事項を入力してリリース
@@ -38,13 +38,13 @@ https://gyazo.com/14f13db7beba530f40d9d36acedf7f80
 
 #### ③お客さんの場合
 ##### (1) 購入
-https://gyazo.com/0ab6832373cb348c62a6d104b0db1835
+![demo](https://gyazo.com/0ab6832373cb348c62a6d104b0db1835/raw)
 
 ##### (2) サービス申込
-https://gyazo.com/4d6451567451636e44f098772febbf83
+![demo](https://gyazo.com/4d6451567451636e44f098772febbf83/raw)
 
 ##### (3) コメント投稿
-https://gyazo.com/6791801128b0efa54f74c5ee06e56465
+![demo](https://gyazo.com/6791801128b0efa54f74c5ee06e56465/raw)
 
 # 目指したい課題解決
 
