@@ -13,6 +13,10 @@
 
 # テスト用アカウント
 
+- 管理者: メールアドレス:owner@fm.co.jp パスワード:owner1
+- お客さん1: メールアドレス:client1@fm.co.jp パスワード:client1 (年間チケット会員)
+- お客さん2: メールアドレス:client2@fm.co.jp パスワード:client2 (レギュラー会員)
+- お客さん3: メールアドレス:client3@fm.co.jp パスワード:client3 (非会員)
 
 # 利用方法
 
