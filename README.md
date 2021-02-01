@@ -26,7 +26,7 @@
 
 #### ②オーナーの場合
 ##### (1) 出品
-https://gyazo.com/a21a0aa1e1b74611e14f9bc02fc60c70
+![demo]https://gyazo.com/a21a0aa1e1b74611e14f9bc02fc60c70
 
 ##### (2) 編集・削除
 ###### 削除ボタン押したら削除される
