@@ -38,8 +38,13 @@ https://gyazo.com/14f13db7beba530f40d9d36acedf7f80
 
 #### ③お客さんの場合
 ##### (1) 購入
+https://gyazo.com/0ab6832373cb348c62a6d104b0db1835
+
 ##### (2) サービス申込
+https://gyazo.com/4d6451567451636e44f098772febbf83
+
 ##### (3) コメント投稿
+https://gyazo.com/6791801128b0efa54f74c5ee06e56465
 
 # 目指したい課題解決
 
