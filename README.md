@@ -26,9 +26,11 @@
 
 #### ②オーナーの場合
 ##### (1) 出品
-https://user-images.githubusercontent.com/75296964/106410272-d4e2e680-6485-11eb-8c29-354e07363b3f.mp4
+https://gyazo.com/a21a0aa1e1b74611e14f9bc02fc60c70
 
 ##### (2) 編集・削除
+https://gyazo.com/14f13db7beba530f40d9d36acedf7f80
+
 ##### (3) サービス
 
 #### ③お客さんの場合
