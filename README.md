@@ -13,6 +13,7 @@
 
 # テスト用アカウント
 
+- URL：https://original-application-33039.herokuapp.com/
 - 管理者: メールアドレス:owner@fm.co.jp パスワード:owner1
 - お客さん1: メールアドレス:client1@fm.co.jp パスワード:client1 (年間チケット会員)
 - お客さん2: メールアドレス:client2@fm.co.jp パスワード:client2 (レギュラー会員)
